@@ -1,0 +1,12 @@
+ul.menu li {
+         display: inline;
+         margin-right: 5px;
+     }
+ul.social li {
+    display: inline;
+    margin-right: 10px;
+}
+footer {
+    background-color: dodgerblue;
+    text-align: center;
+}
