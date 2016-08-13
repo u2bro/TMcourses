@@ -13,3 +13,36 @@ footer {
 .img {
     text-align: center;
 }
+
+.inputs {
+    background-color: ghostwhite;
+    height: 40px;
+    width: 300px;
+    border: none;
+    padding-left: 20px;
+    margin: 10px;
+}
+.inputs_sub {
+    background-color: ghostwhite;
+    height: 40px;
+    width: 640px;
+    border: none;
+    padding-left: 20px;
+    margin: 0 10px 10px 10px;
+}
+.tarea {
+    background-color: ghostwhite;
+    border: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin: 0 10px 10px 10px;
+    width: 640px;
+    height: 120px;
+}
+.sub_button {
+    background-color: white;
+    color: blue;
+    border: none;
+    font-weight: bolder;
+    font-size: larger;
+}
