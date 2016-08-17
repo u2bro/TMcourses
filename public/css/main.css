@@ -10,8 +10,27 @@ footer {
     background-color: dodgerblue;
     text-align: center;
 }
+footer.art_footer {
+    background-color: white;
+    text-align: left;
+}
 .img {
     text-align: center;
+}
+#pagination {
+    text-align: center;
+}
+
+.i_do {
+    text-align: right;
+    background-color: blue;
+    color: white;
+    float: right;
+    display: inline-block;
+
+}
+.art_date {
+
 }
 
 .inputs {
@@ -45,4 +64,7 @@ footer {
     border: none;
     font-weight: bolder;
     font-size: larger;
+}
+body {
+    width: 950px;
 }
