@@ -1,3 +1,4 @@
+
 ul.menu li {
          display: inline;
          margin-right: 5px;
@@ -7,13 +8,10 @@ ul.social li {
     margin-right: 10px;
 }
 footer {
-    background-color: dodgerblue;
+    background-color: #5c6bc0;
     text-align: center;
 }
-footer.art_footer {
-    background-color: white;
-    text-align: left;
-}
+
 .img {
     text-align: center;
 }
@@ -23,7 +21,7 @@ footer.art_footer {
 
 .i_do {
     text-align: right;
-    background-color: blue;
+    background-color: #5c6bc0;
     color: white;
     float: right;
 
@@ -33,23 +31,33 @@ footer.art_footer {
 }
 
 .inputs {
-    background-color: ghostwhite;
+    background-color: #f7f9fc;
     height: 40px;
     width: 300px;
     border: none;
     padding-left: 20px;
     margin: 10px;
 }
+input:focus::-moz-placeholder{ opacity: 0;}
+input:focus::-webkit-input-placeholder{ opacity: 0;}
+input:focus:-moz-placeholder{ opacity: 0;}
+input:focus:-ms-input-placeholder{ opacity: 0;}
+
+textarea:focus::-moz-placeholder{ opacity: 0;}
+textarea:focus::-webkit-input-placeholder{ opacity: 0;}
+textarea:focus:-moz-placeholder{ opacity: 0;}
+textarea:focus:-ms-input-placeholder{ opacity: 0;}
+
 .inputs_sub {
-    background-color: ghostwhite;
+    background-color: #f7f9fc;
     height: 40px;
     width: 640px;
     border: none;
     padding-left: 20px;
     margin: 0 10px 10px 10px;
 }
-.tarea {
-    background-color: ghostwhite;
+.text_area {
+    background-color: #f7f9fc;
     border: none;
     padding-left: 20px;
     padding-top: 15px;
@@ -59,11 +67,71 @@ footer.art_footer {
 }
 .sub_button {
     background-color: white;
-    color: blue;
+    color: #5c6bc0;
     border: none;
     font-weight: bolder;
     font-size: larger;
 }
 body {
     width: 950px;
+}
+
+a {
+    color: #5c6bc0;
+}
+a:hover {
+    color: #3d4b8a;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+footer a:hover {
+    color:#ffffff;
+    text-decoration: underline;
+}
+.read_more {
+    font-size: 21px;
+    margin:5px 5px 5px 0;
+    position: absolute;
+    left: 3px;
+
+}
+.tags {
+    position: absolute;
+    right: 3px;
+    font-size: 15px;
+
+
+}
+.tags a{
+    color: #c7c7c7;
+}
+.tags a:hover {
+    color: #5c6bc0;
+}
+.tags a:active {
+    text-decoration: none;
+}
+.read_more a {
+    color: #5c6bc0;
+    padding:18px 34px;
+}
+.read_more a:hover {
+    color: #5c6bc0;
+    border: 1px solid #f1f1f1;
+    text-decoration: none;
+    padding:17px 33px;
+
+}
+.read_more a:active {
+    border: 1px solid #5c6bc0;
+    padding:17px 33px;
+}
+footer.art_footer {
+    background-color: white;
+    text-align: left;
+    position: relative;
+    height: 50px;
 }
