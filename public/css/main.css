@@ -1,4 +1,9 @@
-
+::selection {
+    background: #5c6bc0;
+}
+::-moz-selection {
+    background: #5c6bc0;
+}
 ul.menu li {
          display: inline;
          margin-right: 5px;
@@ -11,6 +16,19 @@ footer {
     background-color: #5c6bc0;
     text-align: center;
 }
+.art_text::before {
+    width: 750px;
+    position: absolute;
+    height: 3px;
+    top: 50px;
+    left: 100px;
+    background: #eeeeee;
+    Content: "";
+}
+.art_text {
+    position: relative;
+    padding-top: 100px;
+}
 
 .img {
     text-align: center;
@@ -18,16 +36,21 @@ footer {
 #pagination {
     text-align: center;
 }
+.art_header {
+    position: relative;
+}
 
 .i_do {
-    text-align: right;
+    position: absolute;
+    right: -15px;
     background-color: #5c6bc0;
     color: white;
-    float: right;
+
 
 }
 .art_date {
-
+    position: absolute;
+    left: 100px;
 }
 
 .inputs {
@@ -37,7 +60,52 @@ footer {
     border: none;
     padding-left: 20px;
     margin: 10px;
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
+.inputs:required:valid {
+    border: 2px solid green;
+    color: green;
+    height: 36px;
+    width: 296px;
+}
+.inputs:invalid {
+    border: 2px solid red;
+    color: red;
+    height: 36px;
+    width: 296px;
+
+}
+.text_area:required:valid {
+    border: 2px solid green;
+    color: green;
+    height: 116px;
+    width: 636px;
+}
+.text_area:invalid {
+    border: 2px solid red;
+    color: red;
+    height: 116px;
+    width: 636px;
+
+}
+.inputs_sub:required:valid {
+    border: 2px solid green;
+    color: green;
+    height: 36px;
+    width: 636px;
+}
+.inputs_sub:invalid {
+    border: 2px solid red;
+    color: red;
+    height: 36px;
+    width: 636px;
+
+}
+
+
 input:focus::-moz-placeholder{ opacity: 0;}
 input:focus::-webkit-input-placeholder{ opacity: 0;}
 input:focus:-moz-placeholder{ opacity: 0;}
@@ -55,6 +123,10 @@ textarea:focus:-ms-input-placeholder{ opacity: 0;}
     border: none;
     padding-left: 20px;
     margin: 0 10px 10px 10px;
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 .text_area {
     background-color: #f7f9fc;
@@ -64,6 +136,10 @@ textarea:focus:-ms-input-placeholder{ opacity: 0;}
     margin: 0 10px 10px 10px;
     width: 640px;
     height: 120px;
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 .sub_button {
     background-color: white;
@@ -74,7 +150,9 @@ textarea:focus:-ms-input-placeholder{ opacity: 0;}
 }
 body {
     width: 950px;
+
 }
+
 
 a {
     color: #5c6bc0;
