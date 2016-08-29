@@ -127,6 +127,10 @@ nav.nav_header {
     float: right;
 
 }
+nav.nav_header_small {
+    float: right;
+
+}
 
 ::selection {
     background: #5c6bc0;
@@ -406,6 +410,9 @@ header .container {
     h2 {
         margin-top: 60px;
 
+    }
+    nav.nav_header ul.menu li {
+        margin-right: 15px;
     }
 
 
