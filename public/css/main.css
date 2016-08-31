@@ -103,11 +103,19 @@ footer a:hover {
     color:#ffffff;
     text-decoration: underline;
 }
+header a {
+    text-decoration: none;
+}
+header a:hover {
+
+    text-decoration: none;
+    border-bottom: 3px solid  #5c6bc0;
+}
 
 ul.menu li {
          display: inline;
          margin-right: 35px;
-    font-family: "LatoBold";
+    font-family: LatoBold;
     font-size: 16px;
 
      }
@@ -310,15 +318,16 @@ textarea:focus:-ms-input-placeholder{ opacity: 0;}
 
 
 }
-.tags a{
+.tags a, .tags_left a{
     color: #c7c7c7;
 }
-.tags a:hover {
+.tags a:hover, .tags_left a:hover {
     color: #5c6bc0;
 }
-.tags a:active {
+.tags a:active, .tags_left a:active {
     text-decoration: none;
 }
+
 .read_more a {
     color: #5c6bc0;
     padding:18px 34px;
@@ -358,6 +367,7 @@ footer.art_footer {
     text-decoration: none;
     color: #333333;
 }
+
 footer .container h6{
     color:#9da6d9;
     font-family: LatoRegular;
