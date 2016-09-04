@@ -1,25 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Palo Alto</title>
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/normalize.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-    <div class="logo"><a href="index.html">Palo Alto</a></div>
-    <nav class="nav_header">
-    <ul class="menu">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="archive.html">ARCHIVE</a></li>
-        <li><a href="contacts.html">CONTACT</a></li>
-        <li><a href="search.html">SEARCH</a></li>
-    </ul>
-    </nav>
-</header>
-
+<?php
+include "head.php";
+?>
     <main>
         <header class="art_header">
 
@@ -58,29 +41,7 @@
             </div>
         </footer>
     </main>
-    <footer>
-        <div class="logo_footer">
-            <h2>Palo Alto</h2>
-        </div>
-        <nav class="nav_footer">
-            <ul  class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="archive.html">ARCHIVE</a></li>
-                <li><a href="contacts.html">CONTACT</a></li>
-                <li><a href="search.html">SEARCH</a></li>
-            </ul>
-        </nav>
-        <h6>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</h6>
-        <h6>&copy; 2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <a href="https://pixelbuddha.net/">PixelBuddha Team</a></h6>
-        <div>
-            <ul class="social">
-                <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/icons/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><img src="../img/icons/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://www.pinterest.com/" target="_blank"><img src="../img/icons/pinterest.png" alt="Pinterest"></a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
+<?php
+include "footer.php";
+?>
 </html>

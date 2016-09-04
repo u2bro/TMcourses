@@ -1,33 +1,8 @@
 <!DOCTYPE html>
  <html lang="en">
-<head>
- <meta charset="utf-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
- <title>Palo Alto</title>
- <link type="text/css" rel="stylesheet" href="../css/normalize.css">
- <link type="text/css" rel="stylesheet" href="../css/grid.css">
- <link type="text/css" rel="stylesheet" href="../css/main.css">
-</head>
-<body>
-<header>
- <div class="container">
-  <div class="logo"><a href="index.html">Palo Alto</a></div>
-  <nav class="nav_header show-m show-l show-xl">
-   <ul class="menu">
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="archive.html">ARCHIVE</a></li>
-    <li><a href="contacts.html">CONTACT</a></li>
-    <li><a href="search.html">SEARCH</a></li>
-   </ul>
-  </nav>
-  <nav class="nav_header_small show-xs show-s">
-   <img src="../img/icons/nav_header_small.png" alt="nav_header_small_icon">
-  </nav>
- </div>
-</header>
+<?php
+    include "head.php";
+?>
     <main>
         <div class="container">
 
@@ -36,7 +11,7 @@
 
                         <header class="art_header">
                             <div class="i_do">
-                                I Do Travel
+                                <a href=""> Do Travel</a>
                             </div>
                             <div class="art_date">
                                 Sep 20
@@ -55,13 +30,13 @@
 
                         <footer class="art_footer">
                             <div class="read_more">
-                                <a href="post.html">READ MORE</a>
+                                <a href="post.php">READ MORE</a>
                             </div>
 
                             <div class="tags">
-                                <span><a href="">#Yosemite</a></span>
-                                <span><a href="">#Peak</a></span>
-                                <span><a href="">#Explorer</a></span>
+                                <span class="tag"><a href="" >#Yosemite</a></span>
+                                <span class="tag"><a href="">#Peak</a></span>
+                                <span class="tag"><a href="">#Explorer</a></span>
                             </div>
                         </footer>
 
@@ -71,10 +46,16 @@
             <article class="row example">
                 <div class="col s-12">
                     <header class="art_header">
-                        <div class="img"><img src="../img/img_1.jpg" alt="Image 1"></div>
+                        <div class="img">
 
+                                <img src="../img/img_1.jpg" alt="Image 1">
+                            <div class="pin_it">
+                                <img src="../img/icons/pin_it.png" alt="Pin_it">
+                            </div>
+
+                        </div>
                         <div class="i_do">
-                            I Do Observe
+                            <a href=""> I Do Observe</a>
                         </div>
                         <div class="art_date">
                             Sep 18
@@ -95,13 +76,13 @@
 
                     <footer class="art_footer">
                         <div class="read_more">
-                            <a href="post.html">READ MORE</a>
+                            <a href="post.php">READ MORE</a>
                         </div>
 
                         <div class="tags">
-                            <span><a href="">#Yosemite</a></span>
-                            <span><a href="">#Peak</a></span>
-                            <span><a href="">#Photo</a></span>
+                            <span class="tag"><a href="">#Yosemite</a></span>
+                            <span class="tag"><a href="">#Peak</a></span>
+                            <span class="tag"><a href="">#Photo</a></span>
                         </div>
                     </footer>
                 </div>
@@ -113,7 +94,7 @@
                         <div class="img"> <img src="../img/img_2.jpg" alt="Image 2"></div>
 
                         <div class="i_do">
-                            I Do Photos
+                            <a href=""> I Do Photos</a>
                         </div>
                         <div class="art_date">
                             Sep 14
@@ -129,13 +110,13 @@
 
                     <footer class="art_footer">
                         <div class="read_more">
-                            <a href="post.html">READ MORE</a>
+                            <a href="post.php">READ MORE</a>
                         </div>
 
                         <div class="tags">
-                            <span><a href="">#Yosemite</a></span>
-                            <span><a href="">#Photo</a></span>
-                            <span><a href="">#Hi-res</a></span>
+                            <span class="tag"><a href="">#Yosemite</a></span>
+                            <span class="tag"><a href="">#Photo</a></span>
+                            <span class="tag"><a href="">#Hi-res</a></span>
                         </div>
                     </footer>
                 </div>
@@ -147,7 +128,7 @@
                         <div class="img"><img src="../img/img_3.jpg" alt="Image 3"></div>
 
                         <div class="i_do">
-                            I Do Watch
+                            <a href=""> I Do Watch</a>
                         </div>
                         <div class="art_date">
                             Sep 14
@@ -158,9 +139,9 @@
                     <footer class="art_footer">
 
                         <div class="tags_left">
-                            <span><a href="">#Yosemite</a></span>
-                            <span><a href="">#Peak</a></span>
-                            <span><a href="">#Photo</a></span>
+                            <span class="tag"><a href="">#Yosemite</a></span>
+                            <span class="tag"><a href="">#Peak</a></span>
+                            <span class="tag"><a href="">#Photo</a></span>
                         </div>
                     </footer>
                 </div>
@@ -170,7 +151,7 @@
                 <div class="col s-12">
                     <header class="art_header">
                         <div class="i_do">
-                            I Do Quote
+                            <a href=""> I Do Quote</a>
                         </div><br>
                         <h2><q><i>There is always something left to love.
                            And if you ain’t learned that, you
@@ -191,7 +172,7 @@
                        <div class="img"> <img src="../img/img_4.jpg" alt="Image 4"></div>
 
                         <div class="i_do">
-                            I Do Listen
+                            <a href=""> I Do Listen</a>
                         </div>
                         <div class="art_date">
                             Sep 14
@@ -207,12 +188,12 @@
 
                     <footer class="art_footer">
                         <div class="read_more">
-                            <a href="post.html">READ MORE</a>
+                            <a href="post.php">READ MORE</a>
                         </div>
                         <div class="tags">
-                            <span><a href="">#Weekend</a></span>
-                            <span><a href="">#Music</a></span>
-                            <span><a href="">#Discovery</a></span>
+                            <span class="tag"><a href="">#Weekend</a></span>
+                            <span class="tag"><a href="">#Music</a></span>
+                            <span class="tag"><a href="">#Discovery</a></span>
                         </div>
                     </footer>
                 </div>
@@ -222,11 +203,21 @@
                 <div class="col s-12">
                     <header class="art_header">
 
-                        <div class="img">  <img src="../img/img_5.jpg" alt="Image 5">
-                            </div>
+                        <div class="img">
 
+                            <ul class="bxslider">
+                               
+
+                                <li><img src="../img/img_5.jpg" alt="img5"/></li>
+                                <li><img src="../img/img_7.png" alt="img7"/></li>
+                                <li><img src="../img/img_8.png" alt="img8"/></li>
+
+                            </ul>
+                            <!--                            <img src="../img/img_5.jpg" alt="Image 5">-->
+
+                        </div>
                         <div class="i_do">
-                            I Do Explore
+                            <a href=""> I Do Explore</a>
                         </div>
                         <div class="art_date">
                             Sep 12
@@ -246,12 +237,12 @@
 
                     <footer class="art_footer">
                         <div class="read_more">
-                            <a href="post.html">READ MORE</a>
+                            <a href="post.php">READ MORE</a>
                         </div>
                         <div class="tags">
-                            <span><a href="">#Idea</a></span>
-                            <span><a href="">#Yosemite</a></span>
-                            <span><a href="">#Vacation</a></span>
+                            <span class="tag"><a href="">#Idea</a></span>
+                            <span class="tag"><a href="">#Yosemite</a></span>
+                            <span class="tag"><a href="">#Vacation</a></span>
                         </div>
                     </footer>
                 </div>
@@ -263,7 +254,7 @@
                     <header class="art_header">
 
                         <div class="i_do">
-                            I Do Reflect
+                            <a href="">I Do Reflect</a>
                         </div>
                         <div class="art_date">
                             Sep 11
@@ -288,11 +279,11 @@
 
                     <footer class="art_footer">
                         <div class="read_more">
-                            <a href="post.html">READ MORE</a>
+                            <a href="post.php">READ MORE</a>
                         </div>
                         <div class="tags">
-                            <span><a href="">#Democracy</a></span>
-                            <span><a href="">#Introspection</a></span>
+                            <span class="tag"><a href="">#Democracy</a></span>
+                            <span class="tag"><a href="">#Introspection</a></span>
                         </div>
                     </footer>
                 </div>
@@ -305,32 +296,7 @@
         </div>
 
     </main>
-    <footer>
-        <div class="container">
-            <div class="logo_footer">
-                <h2>Palo Alto</h2>
-            </div>
-            <nav class="nav_footer">
-                <ul  class="menu">
-                    <li><a href="index3.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="archive.html">ARCHIVE</a></li>
-                    <li><a href="contacts.html">CONTACT</a></li>
-                    <li><a href="search.html">SEARCH</a></li>
-                </ul>
-            </nav>
-            <h6>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</h6>
-            <h6>&copy; 2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <a href="https://pixelbuddha.net/">PixelBuddha Team</a></h6>
-            <div>
-                <ul class="social">
-                    <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/icons/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com/" target="_blank"><img src="../img/icons/twitter.png" alt="Twitter"></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><img src="../img/icons/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="https://www.pinterest.com/" target="_blank"><img src="../img/icons/pinterest.png" alt="Pinterest"></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
- </body>
+<?php  
+    include "footer.php";
+?>
  </html>

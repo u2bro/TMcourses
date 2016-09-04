@@ -1,62 +1,57 @@
-/* font-family: "LatoRegular"; */
+/* lato-300 - latin */
 @font-face {
-    font-family: "LatoRegular";
-    src: url("../fonts/LatoRegular/LatoRegular.eot");
-    src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
-    url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+    font-family: 'Lato Light';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'),
+    url('../fonts/Lato/lato-v11-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Lato/lato-v11-latin-300.woff') format('woff'); /* Modern Browsers */
 }
-/* font-family: "LatoBold"; */
+/* lato-300italic - latin */
 @font-face {
-    font-family: "LatoBold";
-    src: url("../fonts/LatoBold/LatoBold.eot");
-    src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoBold/LatoBold.woff") format("woff"),
-    url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'LatoLightItalic';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Lato Light Italic'), local('Lato-LightItalic'),
+    url('../fonts/Lato/lato-v11-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Lato/lato-v11-latin-300italic.woff') format('woff'); /* Modern Browsers */
+
 }
-/* font-family: "LatoItalic"; */
+/* lato-regular - latin */
 @font-face {
-    font-family: "LatoItalic";
-    src: url("../fonts/LatoItalic/LatoItalic.eot");
-    src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoItalic/LatoItalic.woff") format("woff"),
-    url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+    font-family: 'LatoRegular';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+    url('../fonts/Lato/lato-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Lato/lato-v11-latin-regular.woff') format('woff'); /* Modern Browsers */
 }
-/* font-family: "LatoLight"; */
+/* lato-italic - latin */
 @font-face {
-    font-family: "LatoLight";
-    src: url("../fonts/LatoLight/LatoLight.eot");
-    src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoLight/LatoLight.woff") format("woff"),
-    url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'LatoItalic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'),
+    url('../fonts/Lato/lato-v11-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Lato/lato-v11-latin-italic.woff') format('woff'); /* Modern Browsers */
 }
-/* font-family: "LatoBoldItalic"; */
+/* lato-700 - latin */
 @font-face {
-    font-family: "LatoBoldItalic";
-    src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
-    src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
-    url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+    font-family: 'LatoBold';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'),
+    url('../fonts/Lato/lato-v11-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Lato/lato-v11-latin-700.woff') format('woff'); /* Modern Browsers */
 }
-/* font-family: "LatoLightItalic"; */
+/* lato-700italic - latin */
 @font-face {
-    font-family: "LatoLightItalic";
-    src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
-    src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"),
-    url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'LatoBoldItalic';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
+    url('../fonts/Lato/lato-v11-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Lato/lato-v11-latin-700italic.woff') format('woff'); /* Modern Browsers */
 }
 /*-------------------------- overall ----------------*/
 article {
@@ -75,14 +70,13 @@ h2 {
 
 
 article h2 {
-    font-family: LatoBold;
+    font-family: LatoBold, Arial,sans-serif;
 
 }
 article h3 {
-    font-family: LatoItalic;
+    font-family: LatoItalic, Arial,sans-serif;
 
     color: #aaaaaa;
-    font-weight: normal;
 }
 a {
     color: #5c6bc0;
@@ -93,6 +87,7 @@ a:hover {
 footer {
     background-color: #5c6bc0;
     text-align: center;
+    margin-top:50px;
 }
 footer a {
     color: #ffffff;
@@ -100,25 +95,52 @@ footer a {
 
 }
 footer a:hover {
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: underline;
+}
+.nav_search a{
+    background-image: url("../img/icons/search.png");
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.nav_search a::after {
+    display: none;
+}
+.nav_search a:hover {
+    background-image: url("../img/icons/search_hover.png");
+    
 }
 header a {
     text-decoration: none;
+    line-height: 1.5;
+    display: inline-block;
 }
-header a:hover {
 
-    text-decoration: none;
-    border-bottom: 3px solid  #5c6bc0;
+header a::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0;
+    float: right;
+    background-color:#5c6bc0;
+    transition: width .3s ease-in-out;
+}
+header a:hover::after,
+header a:focus::after {
+    width: 100%;
 }
 
 ul.menu li {
          display: inline;
          margin-right: 35px;
-    font-family: LatoBold;
+    font-family: LatoBold, Arial,sans-serif;
     font-size: 16px;
 
      }
+
+
+
 nav.nav_footer ul.menu a  {
     color:#eff0f8;
 }
@@ -126,7 +148,15 @@ nav.nav_footer ul.menu a  {
 ul.menu a {
     color: #333333;
 }
+li.active a{
+    color:#c6c6c6;
+    cursor: default;
+    pointer-events: none;
+}
 
+li.active .nav_search a {
+    background-image: url("../img/icons/search_inactive.png");
+}
 ul.social li {
     display: inline;
     margin-right: 10px;
@@ -142,6 +172,7 @@ nav.nav_header_small {
 
 ::selection {
     background: #5c6bc0;
+    color:white;
 }
 ::-moz-selection {
     background: #5c6bc0;
@@ -158,19 +189,42 @@ nav.nav_header_small {
 .art_text {
     position: relative;
     padding-top: 50px;
-    font-family: LatoRegular;
+    font-family: LatoRegular, Arial,sans-serif;
     font-size: 1.0625rem;
     line-height: 30px;
 }
 
 .img {
     margin: 0 -12px;
+    position: relative;
 }
 
-.img img  {
 
+.img:hover::before{
+    background-color: #000000;
+    opacity: .2;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-
+.pin_it {
+    width: 60px;
+    height: 30px;
+    background-color: #c31a26;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 3px 10px;
+    display: none;
+}
+div.pin_it.img_show {
+    display: inherit;
+}
 .img_text {
     float: left;
 }
@@ -188,16 +242,26 @@ nav.nav_header_small {
     color: white;
     padding: 10px;
     top:0;
-    font-family: LatoBold;
+    font-family: LatoBold, Arial,sans-serif;
     font-size: 14px;
-
+    transition: padding .3s ease-in-out;
+}
+.i_do a {
+    color:white;
+}
+.i_do a::after {
+     display: none;
+ }
+.i_do:hover {
+    background-color: #6c79c6;
+    padding: 13px;
 }
 .art_date {
     position: absolute;
     margin-top: 50px;
     color: #c1c1c1;
     font-size: 14px;
-    font-family: LatoBold;
+    font-family: LatoBold, Arial,sans-serif;
 }
 
 .inputs {
@@ -295,28 +359,13 @@ textarea:focus:-ms-input-placeholder{ opacity: 0;}
     font-weight: bolder;
     font-size: larger;
 }
-
-
-
-
-.read_more {
-    font-size: 21px;
-    font-family: LatoBold;
-    margin:50px 5px 50px 0;
-    position: absolute;
-    left: 3px;
-
-}
 .tags {
     position: absolute;
     right: 3px;
     font-size: 15px;
-    font-family: LatoRegular;
+    font-family: LatoRegular, Arial,sans-serif;
     margin-top: 50px;
     margin-bottom: 50px;
-
-
-
 }
 .tags a, .tags_left a{
     color: #c7c7c7;
@@ -327,38 +376,62 @@ textarea:focus:-ms-input-placeholder{ opacity: 0;}
 .tags a:active, .tags_left a:active {
     text-decoration: none;
 }
-
-.read_more a {
-    color: #5c6bc0;
+.read_more {
     padding:18px 34px;
+    font-size: 21px;
+    font-family: LatoBold, Arial,sans-serif;
+    margin:30px 5px 0 0;
+    position: absolute;
+    left: 3px;
+
+}
+.read_more a{
+    color: #5c6bc0;
+}
+.read_more:hover {
+
+    border: 1px solid #f1f1f1;
+    padding:17px 33px;
+
 }
 .read_more a:hover {
     color: #5c6bc0;
-    border: 1px solid #f1f1f1;
     text-decoration: none;
-    padding:17px 33px;
+}
+div.i_do.i_do_clicked {
+    background-color:#5360ac;
 
 }
-.read_more a:active {
-    border: 1px solid #5c6bc0;
+div.read_more.read_more_clicked {
+    border:1px solid #7d89cd;
     padding:17px 33px;
+}
+span.tag a.tag_clicked {
+    text-decoration: none;
+}
+nav.nav_header ul.menu li a.menu_clicked {
+    color: #5c6bc0;
+}
+nav.nav_header ul.menu li a.menu_clicked::after {
+    display: none;
 }
 footer.art_footer {
     background-color: white;
     text-align: left;
     position: relative;
     height: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    margin-top: inherit;
 
 }
 .logo_footer h2 {
     color:#4a569a;
-    font-family: LatoBoldItalic;
+    font-family: LatoBoldItalic, Arial,sans-serif;
     font-size: 36px;
 }
 
 .logo {
-    font-family: "LatoBoldItalic";
+    font-family: LatoBoldItalic, Arial,sans-serif;
     font-size: 42px;
     float: left;
 
@@ -367,10 +440,13 @@ footer.art_footer {
     text-decoration: none;
     color: #333333;
 }
+.logo a::after {
+    display: none;
+}
 
 footer .container h6{
     color:#9da6d9;
-    font-family: LatoRegular;
+    font-family: LatoRegular, Arial,sans-serif;
 }
 
 header .container {
@@ -397,6 +473,9 @@ header .container {
         margin-top: 60px;
 
     }
+    footer {
+        margin-top: 60px;
+    }
 
 
 
@@ -406,21 +485,11 @@ header .container {
     .container {
         max-width: 720px;
     }
-    .i_do {
-        right:  -0.9375rem;
 
-    }
-    .img {
-        margin: 0 -15px;
-
-    }
     .img img  {
         width: 720px;
     }
-    h2 {
-        margin-top: 60px;
 
-    }
     nav.nav_header ul.menu li {
         margin-right: 15px;
     }
@@ -453,6 +522,9 @@ header .container {
         margin-top: 100px;
 
     }
+    footer {
+        margin-top: 100px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -464,20 +536,12 @@ header .container {
         top:inherit;
         margin-top: 20px;
     }
-    article {
-        padding: 0 100px;
-    }
-    .img {
-        margin: 0 -115px;
 
-    }
+
     .img img  {
         width: 1170px;
     }
-    h2 {
-        margin-top: 100px;
 
-    }
     article h2 {
         font-size: 40px;
 
