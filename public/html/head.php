@@ -41,7 +41,7 @@
                 foreach ($menu as $title=>$url) {
                     $class = strpos($_SERVER["REQUEST_URI"], $url) !== false ? " class='active'" : "";
                     if ($url=="search.php") {
-                     echo "<li$class><span class=\"nav_search\"><a href='search.php')> </a></span></li>";
+                     echo "<li$class><span class=\"nav_search\"><a href='search.php'> </a></span></li>";
                     }
                     else    echo "<li$class><a href='$url'>$title</a></li>";
                     $i++;

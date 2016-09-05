@@ -5,11 +5,18 @@
         </div>
         <nav class="nav_footer">
             <ul  class="menu">
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="about.php">ABOUT</a></li>
-                <li><a href="archive.php">ARCHIVE</a></li>
-                <li><a href="contacts.php">CONTACT</a></li>
-                <li><a href="search.php">SEARCH</a></li>
+                <?php
+                $menu = array ("HOME"=>"index.php", "ABOUT"=>"about.php", "ARCHIVE"=>"archive.php", "CONTACT"=>"contacts.php", "SEARCH"=>"search.php",);
+                $i=1;
+                foreach ($menu as $title=>$url) {
+                    $class = strpos($_SERVER["REQUEST_URI"], $url) !== false ? " class='active'" : "";
+                    if ($url=="search.php") {
+                        echo "<li$class><span class=\"nav_search\"><a href='search.php'> </a></span></li>";
+                    }
+                    else    echo "<li$class><a href='$url'>$title</a></li>";
+                    $i++;
+                }
+                ?>
             </ul>
         </nav>
         <h6>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</h6>
@@ -39,15 +46,16 @@
     $('nav.nav_header ul.menu li a').on('click', function () {
         $(this).addClass('menu_clicked');
     });
+    $('nav.nav_footer ul.menu li a').on('click', function () {
+        $(this).addClass('menu_clicked');
+    });
 
     $('body').show();
     $('.version').text(NProgress.version);
     NProgress.start();
     setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
 
-    $('.img').on('hover', function () {
-        $(this.childNodes).style.display='block';
-    })
+
 
 
 

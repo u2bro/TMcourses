@@ -29,11 +29,11 @@
                         </div>
 
                         <footer class="art_footer">
-                            <div class="read_more">
+                            <div class="read_more col xs-12 m-6">
                                 <a href="post.php">READ MORE</a>
                             </div>
 
-                            <div class="tags">
+                            <div class="tags col xs-12 m-6">
                                 <span class="tag"><a href="" >#Yosemite</a></span>
                                 <span class="tag"><a href="">#Peak</a></span>
                                 <span class="tag"><a href="">#Explorer</a></span>
@@ -75,11 +75,11 @@
                     </div>
 
                     <footer class="art_footer">
-                        <div class="read_more">
+                        <div class="read_more col xs-12 m-6">
                             <a href="post.php">READ MORE</a>
                         </div>
 
-                        <div class="tags">
+                        <div class="tags col xs-12 m-6">
                             <span class="tag"><a href="">#Yosemite</a></span>
                             <span class="tag"><a href="">#Peak</a></span>
                             <span class="tag"><a href="">#Photo</a></span>
@@ -91,7 +91,11 @@
             <article class="row example">
                 <div class="col s-12">
                     <header class="art_header">
-                        <div class="img"> <img src="../img/img_2.jpg" alt="Image 2"></div>
+                        <div class="img"> <img src="../img/img_2.jpg" alt="Image 2">
+                            <div class="pin_it">
+                                <img src="../img/icons/pin_it.png" alt="Pin_it">
+                            </div>
+                        </div>
 
                         <div class="i_do">
                             <a href=""> I Do Photos</a>
@@ -109,11 +113,11 @@
                     </div>
 
                     <footer class="art_footer">
-                        <div class="read_more">
+                        <div class="read_more col xs-12 m-6">
                             <a href="post.php">READ MORE</a>
                         </div>
 
-                        <div class="tags">
+                        <div class="tags col xs-12 m-6">
                             <span class="tag"><a href="">#Yosemite</a></span>
                             <span class="tag"><a href="">#Photo</a></span>
                             <span class="tag"><a href="">#Hi-res</a></span>
@@ -125,7 +129,11 @@
             <article class="row example">
                 <div class="col s-12">
                     <header class="art_header">
-                        <div class="img"><img src="../img/img_3.jpg" alt="Image 3"></div>
+                        <div class="img"><img src="../img/img_3.jpg" alt="Image 3">
+                            <div class="pin_it">
+                                <img src="../img/icons/pin_it.png" alt="Pin_it">
+                            </div>
+                        </div>
 
                         <div class="i_do">
                             <a href=""> I Do Watch</a>
@@ -169,7 +177,11 @@
             <article class="row example">
                 <div class="col s-12">
                     <header class="art_header">
-                       <div class="img"> <img src="../img/img_4.jpg" alt="Image 4"></div>
+                       <div class="img"> <img src="../img/img_4.jpg" alt="Image 4">
+                           <div class="pin_it">
+                               <img src="../img/icons/pin_it.png" alt="Pin_it">
+                           </div>
+                       </div>
 
                         <div class="i_do">
                             <a href=""> I Do Listen</a>
@@ -187,10 +199,10 @@
                     </div>
 
                     <footer class="art_footer">
-                        <div class="read_more">
+                        <div class="read_more col xs-12 m-6">
                             <a href="post.php">READ MORE</a>
                         </div>
-                        <div class="tags">
+                        <div class="tags col xs-12 m-6">
                             <span class="tag"><a href="">#Weekend</a></span>
                             <span class="tag"><a href="">#Music</a></span>
                             <span class="tag"><a href="">#Discovery</a></span>
@@ -205,15 +217,18 @@
 
                         <div class="img">
 
-                            <ul class="bxslider">
-                               
-
-                                <li><img src="../img/img_5.jpg" alt="img5"/></li>
-                                <li><img src="../img/img_7.png" alt="img7"/></li>
-                                <li><img src="../img/img_8.png" alt="img8"/></li>
-
-                            </ul>
-                            <!--                            <img src="../img/img_5.jpg" alt="Image 5">-->
+<!--                            <ul class="bxslider">-->
+<!--                               -->
+<!---->
+<!--                                <li><img src="../img/img_5.jpg" alt="img5"/></li>-->
+<!--                                <li><img src="../img/img_7.png" alt="img7"/></li>-->
+<!--                                <li><img src="../img/img_8.png" alt="img8"/></li>-->
+<!---->
+<!--                            </ul>-->
+                                                        <img src="../img/img_5.jpg" alt="Image 5">
+                            <div class="pin_it">
+                                <img src="../img/icons/pin_it.png" alt="Pin_it">
+                            </div>
 
                         </div>
                         <div class="i_do">
@@ -236,10 +251,10 @@
                     </div>
 
                     <footer class="art_footer">
-                        <div class="read_more">
+                        <div class="read_more col xs-12 m-6">
                             <a href="post.php">READ MORE</a>
                         </div>
-                        <div class="tags">
+                        <div class="tags col xs-12 m-6">
                             <span class="tag"><a href="">#Idea</a></span>
                             <span class="tag"><a href="">#Yosemite</a></span>
                             <span class="tag"><a href="">#Vacation</a></span>
@@ -278,10 +293,10 @@
                     </div>
 
                     <footer class="art_footer">
-                        <div class="read_more">
+                        <div class="read_more col xs-12 m-6">
                             <a href="post.php">READ MORE</a>
                         </div>
-                        <div class="tags">
+                        <div class="tags col xs-12 m-6">
                             <span class="tag"><a href="">#Democracy</a></span>
                             <span class="tag"><a href="">#Introspection</a></span>
                         </div>
@@ -290,9 +305,15 @@
 
             </article>
 
+
                 <div id="pagination">
-                    1 2 3
+
+                        <div class="pagination_page active"><a href="">1</a> </div>
+                        <div class="pagination_page"><a href="">2</a> </div>
+                        <div class="pagination_page"><a href="">3</a> </div>
+
                 </div>
+            </center>
         </div>
 
     </main>
