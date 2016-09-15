@@ -149,7 +149,12 @@ ul.menu li {
     font-size: 16px;
 
      }
-
+.main_text {
+    margin-bottom: 70px;
+}
+.main_header {
+    margin-top: 70px;
+}
 .nav_footer .nav_search a{
     background-position: center;
     background-image: url("../img/icons/search_footer.png");
