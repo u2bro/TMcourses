@@ -15,16 +15,16 @@ include "head.php";
                                 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eu neque eros. Ut eu quam justo.</p>
                         </section>
                     </header>
-                     <div class="main_text">
-                <form action="" method="post">
-                    <input class="inputs" type="text" name="name" placeholder="Your Name" required>
-                    <input class="inputs" type="email" name="email" placeholder="Email" required>
-                   <p><input class="inputs_sub" type="text" name="subject" placeholder="Subject" required></p>
-                   <p><textarea class="text_area" name="message" placeholder="Your message" required></textarea></p>
-                    <p><input type="submit" value="SEND MESSAGE" class="sub_button"></p>
+                    <div class="main_text">
+                        <form action="" method="post">
+                            <div class="input_name col m-6"><input class="inputs" type="text" name="name" placeholder="Your Name" required></div>
+                            <div class="input_email col m-6"> <input class="inputs" type="email" name="email" placeholder="Email" required></div>
+                            <div class="input_sub col"><input class="inputs_sub" type="text" name="subject" placeholder="Subject" required></div>
+                            <div class="input_message col"><textarea class="text_area" name="message" placeholder="Your message" required></textarea></div>
+                            <p><input type="submit" value="SEND MESSAGE" class="sub_button"></p>
 
-                </form>
-            </div>
+                        </form>
+                    </div>
                 </div>
             </article>
         </div>

@@ -6,6 +6,7 @@
     <main>
         <div class="container">
             <article class="row example">
+                <div class="col">
             <header class="main_header">
                 <h1>About</h1>
                 <section class="desc">
@@ -18,7 +19,7 @@
                     Vestibulum cursus sodales rhoncus.</p>
                 <p>Cras ac elit non massa sodales commodo. Nullam dapibus sed orci nec finibus. Sed gravida nibh at mattis mattis. Ut bibendum orci at diam pharetra viverra.
                     Nam pellentesque varius eleifend. Integer vitae elit viverra, mollis quam et, vehicula odio.</p>
-            </div>
+            </div></div>
             </article>
         </div>
     </main>

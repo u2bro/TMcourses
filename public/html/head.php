@@ -36,7 +36,7 @@
         <nav class="nav_header show-m show-l show-xl">
             <ul class="menu">
                 <?php
-                $menu = array ("HOME"=>"index.php", "ABOUT"=>"about.php", "ARCHIVE"=>"archive.php", "CONTACT"=>"contacts.php", "SEARCH"=>"search.php",);
+                $menu = array ("HOME"=>"index.php", "ABOUT"=>"about.php", "ARCHIVE"=>"archive.php", "CONTACT"=>"contacts.php", "SEARCH"=>"search.php");
                 $i=1;
                 foreach ($menu as $title=>$url) {
                     $class = strpos($_SERVER["REQUEST_URI"], $url) !== false ? " class='active'" : "";
@@ -57,7 +57,29 @@
             </ul>
         </nav>
         <nav class="nav_header_small show-xs show-s">
-            <img src="../img/icons/nav_header_small.png" alt="nav_header_small_icon">
+            <div class="mobile_menu_button"></div>
+            <div class="mobile_menu">
+                <ul class="mobile_menu_items">
+                <?php
+                $menu = array ("SEARCH"=>"search.php","HOME"=>"index.php", "ABOUT"=>"about.php", "ARCHIVE"=>"archive.php", "CONTACT"=>"contacts.php");
+                $i=1;
+                foreach ($menu as $title=>$url) {
+                    $class = strpos($_SERVER["REQUEST_URI"], $url) !== false ? " class='active'" : "";
+                    if ($url=="search.php") {
+                        echo "<li><div class=\"nav_search_mobile\"><input class='search_mobile_input' placeholder='SEARCH' type='search'><a href='search.php'> </a></div></li>";
+                    }
+                    else    echo "<li$class><a href='$url'>$title</a></li>";
+                    $i++;
+                }
+                ?>
+                    </ul>
+                <div class="mobile_menu_footer">
+                <h3>Palo Alto</h3>
+                Designed & Developed by PixelBuddha Team
+            </div>
+            </div>
+
+            <div class="mobile_background"></div>
         </nav>
     </div>
 </header>

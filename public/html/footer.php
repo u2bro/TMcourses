@@ -11,15 +11,18 @@
                 foreach ($menu as $title=>$url) {
                     $class = strpos($_SERVER["REQUEST_URI"], $url) !== false ? " class='active'" : "";
                     if ($url=="search.php") {
-                        echo "<li$class><span class=\"nav_search\"><a href='search.php'> </a></span></li>";
+                        echo "<li$class><span class=\"nav_search  \"><a href='search.php'> </a></span></li>";
                     }
-                    else    echo "<li$class><a href='$url'>$title</a></li>";
+                    else    echo "<li$class> <a href='$url'>$title</a></li>";
                     $i++;
                 }
                 ?>
             </ul>
         </nav>
-        <h6>Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</h6>
+
+        <div class="footer_text_h6">
+            <h6 class="text_footer">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</h6>
+        </div>
         <h6>&copy; 2015 - Palo Alto. All Rights Reserved. Designed &amp; Developed by <a href="https://pixelbuddha.net/">PixelBuddha Team</a></h6>
         <div>
             <ul class="social">
@@ -56,9 +59,22 @@
     setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
 
 
+    $('.mobile_background').on('click', function () {
+if ($('.mobile_menu').hasClass('active')) {
+//    $('.mobile_menu').toggleClass('active2' );
 
+        $('.mobile_menu').removeClass('active');
+        $('.mobile_menu_button').removeClass('active');
+        $('.mobile_background').removeClass('active');
+}
+    });
 
+    $('.mobile_menu_button').on('click', function () {
+        $('.mobile_menu').toggleClass('active' );
+        $(this).toggleClass('active' );
+        $('.mobile_background').toggleClass('active' );
 
+    });
 
 
 </script>

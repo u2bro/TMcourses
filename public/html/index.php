@@ -11,7 +11,7 @@
 
                         <header class="art_header">
                             <div class="i_do">
-                                <a href=""> Do Travel</a>
+                                <a href="">I Do Travel</a>
                             </div>
                             <div class="art_date">
                                 Sep 20
@@ -313,7 +313,7 @@
                         <div class="pagination_page"><a href="">3</a> </div>
 
                 </div>
-            </center>
+
         </div>
 
     </main>
